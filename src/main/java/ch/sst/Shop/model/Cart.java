@@ -19,5 +19,54 @@ public class Cart {
     Customer customer;
 
     @ManyToMany
+    @JoinTable(name = "Cart_Product",joinColumns = @JoinColumn(name = "cart_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     Set<Product> productSet;
+
+    public Cart(long id, double totalPrice, Customer customer) {
+        this.id = id;
+        this.totalPrice = totalPrice;
+        this.customer = customer;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Set<Product> getProductSet() {
+        return productSet;
+    }
+
+    public void setProductSet(Set<Product> productSet) {
+        this.productSet = productSet;
+    }
+
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "id=" + id +
+                ", totalPrice=" + totalPrice +
+                ", customer=" + customer +
+                ", productSet=" + productSet +
+                '}';
+    }
 }
