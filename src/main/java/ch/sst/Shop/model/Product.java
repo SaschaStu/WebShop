@@ -41,6 +41,10 @@ public class Product {
         this.producer = producer;
     }
 
+    public Product() {
+
+    }
+
     public long getId() {
         return id;
     }

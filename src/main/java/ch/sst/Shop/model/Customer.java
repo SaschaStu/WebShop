@@ -64,6 +64,10 @@ public class Customer {
         this.cart = cart;
     }
 
+    public Customer() {
+
+    }
+
     public long getId() {
         return id;
     }

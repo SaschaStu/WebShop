@@ -28,6 +28,10 @@ public class Cart {
         this.customer = customer;
     }
 
+    public Cart() {
+
+    }
+
     public long getId() {
         return id;
     }

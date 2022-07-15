@@ -41,6 +41,10 @@ public class Producer {
         this.email = email;
     }
 
+    public Producer() {
+
+    }
+
     public long getId() {
         return id;
     }
