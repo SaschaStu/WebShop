@@ -1,6 +1,8 @@
 package ch.sst.Shop.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -26,6 +28,7 @@ public class Producer {
 
     String email;
 
+    @JsonBackReference
     @OneToMany(mappedBy = "producer", fetch = FetchType.EAGER)
     List<Product> productList;
 
@@ -128,8 +131,6 @@ public class Producer {
                 ", zip=" + zip +
                 ", country='" + country + '\'' +
                 ", phoneNumber=" + phoneNumber +
-                ", email='" + email + '\'' +
-                ", productList=" + productList +
-                '}';
+                ", email='" + email + '\'';
     }
 }

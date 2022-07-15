@@ -1,6 +1,8 @@
 package ch.sst.Shop.model;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -32,6 +34,7 @@ public class Customer {
 
     String country;
 
+    @JsonManagedReference
     @OneToOne
     @JoinColumn(name = "cart_id", referencedColumnName = "id")
     Cart cart;

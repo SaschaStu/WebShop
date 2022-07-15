@@ -1,7 +1,11 @@
 package ch.sst.Shop.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -22,13 +26,15 @@ public class Product {
 
     String specifications;
 
+    @JsonManagedReference
     @ManyToOne
     @JoinColumn(name = "producer_id", referencedColumnName = "id")
     Producer producer;
 
 
-    @ManyToMany(mappedBy = "productSet")
-    Set<Cart> cartSet;
+    @JsonBackReference
+    @ManyToMany(mappedBy = "productList")
+    List<Cart> cartList;
 
 
     public Product( String shortname, String name, double price, int stock, String specifications, Producer producer) {
@@ -101,12 +107,12 @@ public class Product {
         this.producer = producer;
     }
 
-    public Set<Cart> getCartSet() {
-        return cartSet;
+    public List<Cart> getCartList() {
+        return cartList;
     }
 
-    public void setCartSet(Set<Cart> cartSet) {
-        this.cartSet = cartSet;
+    public void setCartList(List<Cart> cartList) {
+        this.cartList = cartList;
     }
 
     @Override
@@ -119,7 +125,7 @@ public class Product {
                 ", stock=" + stock +
                 ", specifications='" + specifications + '\'' +
                 ", producer=" + producer +
-                ", cartSet=" + cartSet +
+                ", cartSet=" + cartList +
                 '}';
     }
 }
