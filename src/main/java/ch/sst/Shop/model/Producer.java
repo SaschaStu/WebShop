@@ -22,7 +22,7 @@ public class Producer {
 
     String country;
 
-    int phoneNumber;
+    String phoneNumber;
 
     String email;
 
@@ -30,7 +30,7 @@ public class Producer {
     List<Product> productList;
 
 
-    public Producer( String name, String street, String city, int zip, String country, int phoneNumber, String email) {
+    public Producer( String name, String street, String city, int zip, String country, String phoneNumber, String email) {
         super();
         this.name = name;
         this.street = street;
@@ -93,11 +93,11 @@ public class Producer {
         this.country = country;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
