@@ -1,10 +1,8 @@
 package ch.sst.Shop.model;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "Product")
@@ -24,7 +22,13 @@ public class Product {
 
     String specifications;
 
+    @ManyToOne
+    @JoinColumn(name = "producer_id", referencedColumnName = "id")
+    Producer producer;
 
+
+    @ManyToMany
+    Set<Cart> cartSet;
 
 
 }
