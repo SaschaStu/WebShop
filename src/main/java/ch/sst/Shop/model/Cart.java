@@ -22,8 +22,8 @@ public class Cart {
     @JoinTable(name = "Cart_Product",joinColumns = @JoinColumn(name = "cart_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     Set<Product> productSet;
 
-    public Cart(long id, double totalPrice, Customer customer) {
-        this.id = id;
+    public Cart( double totalPrice, Customer customer) {
+        super();
         this.totalPrice = totalPrice;
         this.customer = customer;
     }

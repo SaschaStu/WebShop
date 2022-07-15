@@ -37,8 +37,8 @@ public class Customer {
     Cart cart;
 
 
-    public Customer(long id, String firstname, String lastname, String email, String password, Date registerDate, String street, String city, int zip, String country) {
-        this.id = id;
+    public Customer( String firstname, String lastname, String email, String password, Date registerDate, String street, String city, int zip, String country) {
+       super();
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
@@ -50,8 +50,8 @@ public class Customer {
         this.country = country;
     }
 
-    public Customer(long id, String firstname, String lastname, String email, String password, Date registerDate, String street, String city, int zip, String country, Cart cart) {
-        this.id = id;
+    public Customer( String firstname, String lastname, String email, String password, Date registerDate, String street, String city, int zip, String country, Cart cart) {
+        super();
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;

@@ -31,8 +31,8 @@ public class Product {
     Set<Cart> cartSet;
 
 
-    public Product(long id, String shortname, String name, double price, int stock, String specifications, Producer producer) {
-        this.id = id;
+    public Product( String shortname, String name, double price, int stock, String specifications, Producer producer) {
+        super();
         this.shortname = shortname;
         this.name = name;
         this.price = price;

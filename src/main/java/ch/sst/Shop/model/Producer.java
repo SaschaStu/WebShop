@@ -30,8 +30,8 @@ public class Producer {
     List<Product> productList;
 
 
-    public Producer(long id, String name, String street, String city, int zip, String country, int phoneNumber, String email) {
-        this.id = id;
+    public Producer( String name, String street, String city, int zip, String country, int phoneNumber, String email) {
+        super();
         this.name = name;
         this.street = street;
         this.city = city;
