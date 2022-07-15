@@ -1,0 +1,57 @@
+commit 3dd8e5302455221a8e9e9eef7ef331fbe7706583
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 15:43:08 2022 +0200
+
+    Adjusted ReadMe.md
+
+commit e0e3eed9a76423aaa634058591e811479f4c1e73
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 15:37:07 2022 +0200
+
+    Added ReadMe.md.
+
+commit 988c47243c9e4ec5f4731db4a8a2d77048e3901a
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 15:23:56 2022 +0200
+
+    Implemented whole Restful API
+    except the fact, that u can't put a product into a cart ;)
+
+commit cf50e6e0d4ea4d4a8a00b6975ef4411c92bebf05
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 13:04:31 2022 +0200
+
+    Fixed Database and TestData
+
+commit eee8c38f59425e296e3a8a559a1089e726215bf0
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 10:48:11 2022 +0200
+
+    Adjusted constructors and id's
+    Added EntityRepos to Project
+
+commit ea92aabcb9441e4d0aabbe9b840b91f69824551c
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 10:39:12 2022 +0200
+
+    Added Empty constructors
+
+commit 5f29ffe8199c20bc55b508ccd5908b7f6428ae9c
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 09:50:37 2022 +0200
+
+    Generated Counstructors
+    Generated Getter/Setter
+    Generated toString
+
+commit d4c43b548a9b293dcd2210a9dce7e2c17383836c
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 09:41:25 2022 +0200
+
+    Implemented Relations
+
+commit a6e7ec59265c16b2303ff7e5bc27a7cc4828ef2f
+Author: SaschaStu <sascha@sturzenegger-wyss.ch>
+Date:   Fri Jul 15 09:14:40 2022 +0200
+
+    Initial commit
